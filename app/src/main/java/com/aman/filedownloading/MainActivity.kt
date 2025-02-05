@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
             checkForStoragePermissions{
                 //download Image or other file
                 val fileName = pdfFileLink?.substringAfterLast("/")?:""
-//                   setImageClickListener(img_type, documentUrl, fileName)
                 downloadFile(pdfFileLink, fileName)
             }
         }
