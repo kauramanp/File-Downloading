@@ -7,4 +7,10 @@ This Android app demonstrates how to download a PDF file from a URL using the bu
 <li>Displays a system notification on download completion
 <li>Handles runtime storage permission checks (for Android 6.0+)
 
+# 🛠️ Tech Stack
+<li>Kotlin
+<li>Android SDK
+<li>DownloadManager API
+<li>ViewBinding
+
 
