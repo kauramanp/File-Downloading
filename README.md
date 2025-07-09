@@ -13,4 +13,11 @@ This Android app demonstrates how to download a PDF file from a URL using the bu
 <li>DownloadManager API
 <li>ViewBinding
 
+# 📂 File Download Flow
+```
+val pdfFileLink = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+val fileName = pdfFileLink.substringAfterLast("/")
+downloadFile(pdfFileLink, fileName)
+```
+
 
