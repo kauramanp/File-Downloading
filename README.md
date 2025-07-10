@@ -20,4 +20,14 @@ val fileName = pdfFileLink.substringAfterLast("/")
 downloadFile(pdfFileLink, fileName)
 ```
 
+# 🧩 Integration
+If you're integrating similar functionality in your project, follow these steps:
+
+1. Add Permission in AndroidManifest.xml:
+```
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    android:maxSdkVersion="28"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+```
+
 
