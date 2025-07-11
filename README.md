@@ -30,4 +30,11 @@ If you're integrating similar functionality in your project, follow these steps:
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 ```
 
+2. Use DownloadManager to Download File:
+```
+val downloadManager = getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
+val request = DownloadManager.Request(Uri.parse(fileUrl))
+request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileName)
+downloadManager.enqueue(request)
+```
 
