@@ -38,3 +38,11 @@ request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileN
 downloadManager.enqueue(request)
 ```
 
+3. Handle Runtime Permissions (if required)
+```
+ActivityCompat.requestPermissions(
+    this,
+    arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE),
+    REQUEST_CODE
+)
+```
