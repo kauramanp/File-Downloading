@@ -46,3 +46,7 @@ ActivityCompat.requestPermissions(
     REQUEST_CODE
 )
 ```
+
+# 📷 UI
+The UI contains a single button:
+🔘 Download PDF – triggers the download process.
